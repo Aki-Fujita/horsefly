@@ -1,0 +1,10 @@
+version: '3'
+services:
+  python-algo:
+    restart: always
+    build: .
+    container_name: 'python-algo'
+    working_dir: '/root/'
+    tty: true
+    volumes:
+      - ./src:/root/src
